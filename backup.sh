@@ -1,7 +1,7 @@
 #!/bin/bash
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Summary description of the script:
-# This is a test bash script to backup contents of one directory
+# This is a Bash script to backup contents of one directory
 # (source) into another (target). The full path of the directories
 # is assigned to variables below. 
 
@@ -198,7 +198,7 @@ done
 for i in ${files_to_remove[@]}; do
 	rm $target_dir$i
 	target_dir_ext=$target_dir$(echo $i | sed -n 's|\(.*/\)[^/]*|\1|p')
-	if test $(ls $target_dir_ext); then
+	if [ "$(ls $target_dir_ext)" ]; then
 		# This dir is not empty; do nothing.
 		:
 	else

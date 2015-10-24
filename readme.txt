@@ -2,15 +2,15 @@
 What is this?
 ====================================================================
 
-This is a test bash script to backup contents of one directory
+This is a Bash script to backup contents of one directory
 (source) into another (target). The full path of the directories
 is assigned to variables source_dir and target_dir in the script.
-Assigning those two variables to correct paths is the only thing
-a user needs to do to make it work on their computer (Mac).
-Mac's built-in backup utility (Time Machine) doesn't work with 
-iCloud drive.
+Assigning these 2 variables to correct paths is the only thing
+a user needs to do to make the script work on their Mac. This 
+script is most useful for backups to an iCloud directory. Mac's
+default backup utility (Time Machine) doesn't work with iCloud.
 
-Here is an example of a typical use of this script:
+Here is an example of a typical use for this script:
 
 You have a folder on your Mac where you keep important files,
 such as class notes or important spreadsheets, that you would like
