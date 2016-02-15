@@ -61,7 +61,7 @@ If used incorrectly, this program could delete files and you won't
 be able to recover them. The author won't be liable for any 
 unintended consequences.
 
-This is a free software and comes without any warranty. You can
-distribute it or modify it as you like, but you are not allowed 
-to use this program for commercial purposes without obtaining an
-explicit permission from the author.
+This is a free software and comes without any warranty. Personal
+use is permitted free of charge. Use of this software for any 
+other purpose including commercial purpose is not allowed without
+the author's explicit permission.
