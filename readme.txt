@@ -2,23 +2,38 @@
 What is this?
 ====================================================================
 
-This is a Bash script to backup contents of one directory
-(source) into another (target). The full path of the directories
-is assigned to variables source_dir and target_dir in the script.
-Assigning these 2 variables to correct paths is the only thing
-a user needs to do to make the script work on their Mac. This 
-script is most useful for backups to an iCloud directory. Mac's
-default backup utility (Time Machine) doesn't work with iCloud.
+This is a Bash program for backing up contents of one directory
+(source) into another (target). The full paths for the directories
+are assigned to variables source_dir and target_dir in the script.
 
-Here is an example of a typical use for this script:
+Assigning the correct paths to these 2 variables is the only thing
+a user needs to do to make the script work on their Mac.
+
+This program is mainly intended for backups to the iCloud drive. 
+The Mac's default backup utility called Time Machine currently
+doesn't support backups to iCloud. 
+
+====================================================================
+Important limitation
+====================================================================
+
+The program is known to error out if either one of the directories
+contains over 2-3 thousand items. This is because the bash arrays
+that hold the contents of directories get overwhelmed at runtime.
+
+====================================================================
+Example of typical use
+====================================================================
+
+Here is an example of a typical use of this program:
 
 You have a folder on your Mac where you keep important files,
 such as class notes or important spreadsheets, that you would like
 to be able to backup to your iCloud drive. Note, this works best
-for a small size directory with maybe 100-200 files (10-30 MB),
-not an entire home drive (for backing up your entire drive please
+for a small size directory with less than 2000 files or directories,
+not an entire home drive. For backing up your entire drive please
 use Mac's backup utility, Time Machine, to backup to a portable
-hard drive). The script will backup files in any sub directories. 
+hard drive. The script will backup files in any sub directories. 
 
 You can use this script to make regular backups of this directory
 to an iCloud directory with ease, by saving a copy of this script,
@@ -49,7 +64,7 @@ Also note that if you changed the name of the file, you will have
 to provide that name in place of "backup.sh".
 
 ====================================================================
-Important information
+Legal information
 ====================================================================
 
 The author of this program is Adilbek Madaminov. For questions, 
